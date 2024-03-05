@@ -25,12 +25,13 @@ const btns = document.querySelectorAll('.btn');
 const paras = document.querySelectorAll('.result');
 const playerScoreText = document.querySelector('.score .playerscore');
 const computerScoreText = document.querySelector('.score .computerscore');
+const round = document.querySelector(".header h2");
 
 results.setAttribute('style', 'font-size: 20px;')
 
 let playerScore = 0;
 let computerScore = 0;
-let rounds = 0;
+let rounds = 1;
 
 btns.forEach((button) => {
     button.addEventListener('click', () => {
@@ -50,7 +51,7 @@ btns.forEach((button) => {
         para.classList.add('result')
         para.innerText = resultMessage;
         results.appendChild(para);
-        rounds++;
+        round.innerText = `Round ${++rounds}`;
         if (rounds == 5)
         {
             results.innerHTML = "";
@@ -70,6 +71,7 @@ btns.forEach((button) => {
             computerScore = 0;
             playerScoreText.innerText = `Player:`
             computerScoreText.innerText = `Computer:`;
+            round.innerText = `Round 1`;
         }
     })
 })

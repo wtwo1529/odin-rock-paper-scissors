@@ -1,6 +1,6 @@
 * {
-    background: aqua;
-    font-family: 'Lucida Sans';
+    font-family: 'Poppins';
+    color: #2b2b2b;
 }
 h1, h2 {
     font-weight: 500;
@@ -9,6 +9,7 @@ h3 {
     font-size: 24px;
 }
 .header {
+    padding-top: 4%;
     display: column;
     justify-content: center;
     align-items: center;
@@ -25,11 +26,6 @@ h3 {
 .score .computerscore {
     margin-left: auto;
 }
-.display {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-}
 .selection {
     display: flex;
     flex-direction: column;
@@ -40,8 +36,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
     width: 100%;
+    gap: 10%;
 }
 .results {
     display: column;
@@ -51,7 +47,6 @@ h3 {
 button {
     border-radius: 8px;
     border: 1px black solid;
-    width: 10%;
     font-size: 20px;
     height: 100%;
     text-align: center;
