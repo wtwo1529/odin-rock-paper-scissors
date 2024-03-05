@@ -1,0 +1,58 @@
+* {
+    background: aqua;
+    font-family: 'Lucida Sans';
+}
+h1, h2 {
+    font-weight: 500;
+}
+h3 {
+    font-size: 24px;
+}
+.header {
+    display: column;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    text-align: center;
+}
+.score {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    text-align: center;
+    padding: 0 20%;
+}
+.score .computerscore {
+    margin-left: auto;
+}
+.display {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+.results {
+    display: column;
+    align-items: center;
+    text-align: center;
+}
+button {
+    border-radius: 8px;
+    border: 1px black solid;
+    width: 10%;
+    font-size: 20px;
+    height: 100%;
+    text-align: center;
+}
